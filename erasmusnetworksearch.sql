@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 26 sep. 2023 à 19:56
+-- Généré le : mer. 27 sep. 2023 à 09:42
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.0.26
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `erasmusnetwork`
+-- Base de données : `erasmusnetworksearch`
 --
 
 -- --------------------------------------------------------
@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `location` varchar(255) NOT NULL,
   `program` varchar(255) NOT NULL,
   `university` varchar(255) NOT NULL,
+  `country` varchar(255) DEFAULT 'France',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -41,9 +42,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `location`, `program`, `university`) VALUES
-(1, 'Hak', 'Paris', 'Erasmus', 'Sorbonne'),
-(2, 'Aline Djermouni', 'Paris', 'Erasmus', 'University of Paris');
+INSERT INTO `users` (`id`, `name`, `location`, `program`, `university`, `country`) VALUES
+(1, 'Hak', 'Paris', 'Erasmus', 'Sorbonne', 'France'),
+(2, 'Aline Djermouni', 'Paris', 'Erasmus', 'Sorbonne', 'France');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
