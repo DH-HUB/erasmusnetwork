@@ -35,6 +35,13 @@ GET /users/{id}: Récupère les détails d'un utilisateur spécifique.
 ![image](https://github.com/DH-HUB/erasmusnetwork/assets/60735833/3bfa4143-395c-4daa-a179-d8a24b3a1109
 
 
+lien vers la suite du projet:
+https://github.com/ScorprocS/erasmusnetwork_front/pull/12/commits/75ca8ebf278c6a3468c81c73aa94dfd1fe75896e
+![image](https://github.com/DH-HUB/erasmusnetwork/assets/60735833/a5c58c9e-ed37-4e0a-a247-fa6faf4d0bd3)
+
+
+
+
 Technologies Utilisées
 Spring Boot: Pour créer l'API REST.
 Hibernate: Pour interagir avec la base de données.
