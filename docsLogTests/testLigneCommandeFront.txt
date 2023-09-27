@@ -1,0 +1,99 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+                                                                                                                                                                                                                                        Installez la dernière version de PowerShell pour de nouvelles fonctionnalités et améliorations ! https://aka.ms/PSWindows                                                                                                                                                                                                                                                                                                                                                       PS C:\Users\elian\eclipse-workspace\erasmusnetwork> curl -v http://localhost:8085/api/users/searchUsers                                                                                                                                 
+COMMENTAIRES : GET with 0-byte payload
+COMMENTAIRES : received -1-byte response of content type application/json
+
+
+StatusCode        : 200
+StatusDescription :
+Content           : [{"id":1,"name":"Hak","location":"Paris","program":"Erasmus","university":"Sorbonne","country":"France"},{"id":2,"name":"Aline Djermouni","location":"Paris","program":"Erasmus","university":"Universit...
+RawContent        : HTTP/1.1 200
+                    Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+                    Transfer-Encoding: chunked
+                    Keep-Alive: timeout=60
+                    Connection: keep-alive
+                    Content-Type: application/json
+                    Da...
+Forms             : {}
+Headers           : {[Vary, Origin,Access-Control-Request-Method,Access-Control-Request-Headers], [Transfer-Encoding, chunked], [Keep-Alive, timeout=60], [Connection, keep-alive]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass                                                                                                                                                                                            RawContentLength  : 232                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+PS C:\Users\elian\eclipse-workspace\erasmusnetwork> curl -v "http://localhost:8085/api/users/searchUsers?param1=value1&param2=value2"
+COMMENTAIRES : GET with 0-byte payload
+COMMENTAIRES : received -1-byte response of content type application/json
+
+
+StatusCode        : 200
+StatusDescription :
+Content           : [{"id":1,"name":"Hak","location":"Paris","program":"Erasmus","university":"Sorbonne","country":"France"},{"id":2,"name":"Aline Djermouni","location":"Paris","program":"Erasmus","university":"Universit...
+RawContent        : HTTP/1.1 200
+                    Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+                    Transfer-Encoding: chunked
+                    Content-Type: application/json
+                    Date: Wed, 27 Sep 2023 09:08:08 GMT
+
+                    [{"id":1,"n...
+Forms             : {}
+Headers           : {[Vary, Origin,Access-Control-Request-Method,Access-Control-Request-Headers], [Transfer-Encoding, chunked], [Content-Type, application/json], [Date, Wed, 27 Sep 2023 09:08:08 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass                                                                                                                                                                                            RawContentLength  : 232                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+PS C:\Users\elian\eclipse-workspace\erasmusnetwork> curl -v http://localhost:8080/api/users/searchUsers                              
+COMMENTAIRES : GET with 0-byte payload
+COMMENTAIRES : received -1-byte response of content type application/json
+
+
+StatusCode        : 200
+StatusDescription :
+Content           : [{"id":1,"name":"Hak","location":"Paris","program":"Erasmus","university":"Sorbonne"},{"id":2,"name":"Aline Djermouni","location":"Paris","program":"Erasmus","university":"University of Paris"}]
+RawContent        : HTTP/1.1 200
+                    Transfer-Encoding: chunked
+                    Keep-Alive: timeout=60
+                    Connection: keep-alive
+                    Content-Type: application/json
+                    Date: Wed, 27 Sep 2023 09:08:27 GMT
+
+                    [{"id":1,"name":"Hak","location":"Pari...
+Forms             : {}
+PS C:\Users\elian\eclipse-workspace\erasmusnetwork> curl -v http://localhost:8080/api/users/searchUsers
+COMMENTAIRES : GET with 0-byte payload
+COMMENTAIRES : received -1-byte response of content type application/json                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               StatusCode        : 200                                                                                                                                                                                                                 
+StatusDescription : 
+Content           : [{"id":1,"name":"Hak","location":"Paris","program":"Erasmus","university":"Sorbonne"},{"id":2,"name":"Aline Djermouni","location":"Paris","program":"Erasmus","university":"University of Paris"}]
+RawContent        : HTTP/1.1 200 
+                    Transfer-Encoding: chunked
+                    Keep-Alive: timeout=60
+                    Connection: keep-alive
+                    Content-Type: application/json
+                    Date: Wed, 27 Sep 2023 09:19:12 GMT
+
+                    [{"id":1,"name":"Hak","location":"Pari...
+Forms             : {}
+PS C:\Users\elian\eclipse-workspace\erasmusnetwork> curl -v http://localhost:8080/api/users/searchUsers
+COMMENTAIRES : GET with 0-byte payload
+COMMENTAIRES : received -1-byte response of content type application/json                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               StatusCode        : 200                                                                                                                                                                                                                 
+StatusDescription : 
+Content           : [{"id":1,"name":"Hak","location":"Paris","program":"Erasmus","university":"Sorbonne"},{"id":2,"name":"Aline Djermouni","location":"Paris","program":"Erasmus","university":"University of Paris"}]
+RawContent        : HTTP/1.1 200 
+                    Transfer-Encoding: chunked
+                    Content-Type: application/json
+                    Date: Wed, 27 Sep 2023 09:19:33 GMT
+
+                    [{"id":1,"name":"Hak","location":"Paris","program":"Erasmus","university":"Sorbonne"},...
+Forms             : {}
+Headers           : {[Transfer-Encoding, chunked], [Content-Type, application/json], [Date, Wed, 27 Sep 2023 09:19:33 GMT]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 194
+
+
+
+PS C:\Users\elian\eclipse-workspace\erasmusnetwork>

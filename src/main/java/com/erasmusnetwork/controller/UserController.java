@@ -22,9 +22,10 @@ public class UserController {
     public ResponseEntity<List<User>> searchUsers(
             @RequestParam(required = false) String location,
             @RequestParam(required = false) String program,
-            @RequestParam(required = false) String university
+            @RequestParam(required = false) String university,
+            @RequestParam(required = false) String country
     ) {
-        List<User> users = userRepository.searchUsers(location, program, university);
+        List<User> users = userRepository.searchUsers(location, program, university, country);
         return ResponseEntity.ok(users);
     }
 }

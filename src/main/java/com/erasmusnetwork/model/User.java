@@ -18,6 +18,8 @@ public class User implements Serializable {
     private String program;
     @Column
     private String university;
+    @Column
+    private String country;
 
 
     public Long getId() {
@@ -58,5 +60,13 @@ public class User implements Serializable {
 
     public void setUniversity(String university) {
         this.university = university;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }

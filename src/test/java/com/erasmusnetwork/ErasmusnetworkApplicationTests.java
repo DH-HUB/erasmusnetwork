@@ -28,9 +28,10 @@ class ErasmusnetworkApplicationTests {
 		String location = "NonExistentLocation";
 		String program = "NonExistentProgram";
 		String university = "NonExistentUniversity";
+		String country = "country";
 
 
-		ResponseEntity<List> response = restTemplate.getForEntity("/api/users/searchUsers?location=" + location + "&program=" + program + "&university=" + university, List.class);
+		ResponseEntity<List> response = restTemplate.getForEntity("/api/users/searchUsers?location=" + location + "&program=" + program + "&university=" + university + "&country=" + country, List.class);
 
 
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
