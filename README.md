@@ -29,7 +29,11 @@ Utilisateurs
 GET /users: Récupère la liste de tous les utilisateurs.
 GET /users/{id}: Récupère les détails d'un utilisateur spécifique.
 [UI]
-![image](https://github.com/DH-HUB/erasmusnetwork/assets/60735833/3bfa4143-395c-4daa-a179-d8a24b3a1109)
+
+![image](https://github.com/DH-HUB/erasmusnetwork/assets/60735833/29d879b3-6ae7-47ea-905b-d96b8a688ad9)
+
+![image](https://github.com/DH-HUB/erasmusnetwork/assets/60735833/3bfa4143-395c-4daa-a179-d8a24b3a1109
+
 
 Technologies Utilisées
 Spring Boot: Pour créer l'API REST.
